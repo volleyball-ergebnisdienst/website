@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Volleyball Ergebnisdienst</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Volleyball Ergebnisdienst Deutschland" />
+	<meta name="keywords" content="Volleyball, Ergebnisdienst, Ergebnisse, Volley, Volleyball-Bundesliga, App, Facebook, Widget" />
+	<meta name="author" content="Stefan Kolb" />
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="/favicon.png">
+
+	<!-- Google Webfonts -->
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Simple Line Icons-->
+	<link rel="stylesheet" href="css/simple-line-icons.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Theme Style -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+    	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-64667246-2', 'auto');
+		ga('set', 'anonymizeIp', true);
+		ga('send', 'pageview');
+	</script>
+	</head>
+	<body>
+
+	<!-- Modal -->
+	<div class="modal fade" id="calendarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+							aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id=""><span class="icon-calendar"></span> Kalender abonnieren</h4>
+				</div>
+				<div class="modal-body">
+					<div>
+						<div class="text-center">
+							<small>Wähle den Kalender deiner Wahl</small>
+							<div>
+								<!--
+								<img class="calendar-icon grayscale" src="images/outlook-calendar.png"
+									 data-desc-id="cal-outlook">
+								<img class="calendar-icon grayscale" src="images/google-calendar.png"
+									 data-desc-id="cal-google">
+									 -->
+								<i class="calendar-icon grayscale icon-globe" style="cursor: pointer;" data-desc-id="cal-url"></i>
+								<i class="calendar-icon grayscale icon-download2" style="cursor: pointer;" data-desc-id="cal-offline"></i>
+							</div>
+							<p class="divider"></p>
+						</div>
+						<div class="cal-desc text-center">
+							<p><strong>Klicke zum Abonnieren bitte auf das für Dich passende Kalender-Icon!</strong></p>
+							<p>
+							Die Kalender funktionieren mit allen gängigen Kalendersystemen, die das
+							<a href="https://de.wikipedia.org/wiki/ICalendar" target="_blank" rel="noopener" rel="noopener">ICalendar-Format</a> unterstützen, wie
+							z.B. Apple, Outlook, Google Kalender, Lightning, usw.
+							</p>
+						</div>
+						<div id="cal-google" class="cal-desc text-center" style="display: none">
+							<h4>Abonnieren mit dem Google Calendar</h4>
+
+							<div class="col-md-12">
+								<a id="cal-google-href" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+									Mit Google Calendar abonnieren
+								</a>
+							</div>
+							<p>
+								Nach dem Klick auf den Button öffnet sich der Google Calendar in einem neuen Fenster.
+								Falls du noch nicht eingeloggt bist, musst Du Dich jetzt bei Google anmelden.<br>
+								Anschliessend bestätigen, dass Google den gewünschten Internetkalender abonnieren darf.
+							</p>
+						</div>
+						<div id="cal-outlook" class="cal-desc text-center" style="display: none">
+							<h4>Abonnieren mit Microsoft Outlook</h4>
+
+							mit Microsoft Outlook abonnieren
+							Nach dem Klick auf den Button "mit Microsoft Outlook abonnieren" öffnet sich ein Fenster in
+							dem Du eine Anwendung zum Öffnen des Kalenders auswählen kannst. Hier wählst Du natürlich
+							"Microsoft Outlook" aus.
+
+							Anschliessend bestätigst Du mit "Ja", dass Outlook den Internetkalender abonnieren darf.
+
+							Hinweis: Manchmal dauert es ein wenig bis der abonnierte Kalender in Deinem Outlook
+							erscheint.
+
+							mit Microsoft Outlook abonnieren
+
+							Solltest Du weitere Hilfe zum abonnieren benötigen,
+							so findest Du hier unserer Tutorial im calovo Hilfebereich.
+						</div>
+						<div id="cal-live" class="cal-desc text-center" style="display: none">
+							<h4>Abonnieren mit Outlook.com oder Live.com</h4>
+
+							<div class="col-md-8 col-md-offset-2">
+								<a href="http://calendar.live.com/calendar/calendar.aspx?rru=addsubscription&name=Spielplan+Brose+Bamberg&url=http://i.cal.to/ical/548/brose-bamberg/spielplan/a0d4d538.08c3749a-c65c2d1c.ics"
+								   class="btn btn-primary btn-sm">
+									Kalender herunterladen
+								</a>
+							</div>
+						</div>
+						<div id="cal-offline" class="cal-desc text-center" style="display: none">
+							<h4>Kalender Download</h4>
+							Du möchtest den Kalender herunterladen und als Datei einbinden?
+
+							<div>
+								<a id="cal-download-href" class="btn btn-primary btn-sm">
+									Kalender herunterladen
+								</a>
+							</div>
+							<p>
+								<strong>
+									Achtung: Bitte beachte, dass sich dann die Termine nicht mehr automatisch
+									aktualisieren können!
+									Dafür hast du die Möglichkeit selbst weitere Termine in deinen Kalender einzufügen.
+								</strong>
+							</p>
+						</div>
+						<div id="cal-url" class="cal-desc text-center" style="display: none">
+							<h4>Abonnieren via URL</h4>
+							<p>Du möchtest den Kalender selbst in deine Kalender-Anwendung eintragen? Dann nutze hierfür
+								den folgenden Link:</p>
+							<div class="panel panel-default">
+								<div id="cal-url-href" style="word-wrap:break-word;" class="panel-body">
+									<!-- will be inserted via JS -->
+								</div>
+							</div>
+							<p>Du weißt nicht wie man den Kalender einbindet? Hier findest du Hilfe für den
+								<a href="https://support.google.com/calendar/answer/37100" target="_blank" rel="noopener">Google Calendar</a>,
+								<a href="https://support.office.com/de-de/article/Anzeigen-und-Abonnieren-von-Internetkalendern-7CD5D35A-4A90-4D70-A2F7-F6FADD7E2D9A" target="_blank" rel="noopener">Outlook</a>,
+								<a href="https://support.office.com/de-de/article/Importieren-oder-Abonnieren-eines-Kalenders-in-Outlook-com-oder-Outlook-im-Web-cff1429c-5af6-41ec-a5b4-74f2c278e98c?omkt=de-DE&ui=de-DE&rs=de-DE&ad=DE" target="_blank" rel="noopener">Outlook.com</a>
+							</p>
+						</div>
+						<div class="text-center">
+							<i>
+								<small>Hinweis: Es kann etwas dauern bis die Termine synchronisiert werden!</small>
+							</i>
+							<p class="divider"></p>
+						</div>
+
+						<div class="modal-footer text-center">
+							<div class="text-center">
+								<span class="icon-share"></span>
+								<small><strong>Teile den Kalender mit deinen Mannschaftskollegen und Freunden!</strong>
+								</small>
+								<div class="ssk-group ssk-xs" data-url="https://volleyball-ergebnisdienst.de"
+									 data-title="Volleyball Ergebnisdienst"
+									 data-text="Alle Ergebnisse auf einen Blick. Spieltagskalender, Facebook & Web Integration, u.v.m.">
+									<a href="" class="ssk ssk-facebook ssk-text">Teilen</a>
+									<a href="" class="ssk ssk-twitter ssk-text">Tweet</a>
+									<a href="" class="ssk ssk-google-plus ssk-text">Teilen</a>
+									<a href="" class="ssk ssk-email ssk-text">Weiterleiten</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="modal fade" id="codeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Javascript Widget einbinden</h4>
+				</div>
+				<div class="modal-body">
+					<p>Platziere den Code dort, wo die <strong>Tabelle</strong> auf deiner Seite erscheinen soll.</p>
+					<div class="panel panel-default">
+						<div id="codeSnippet" class="panel-body"></div>
+					</div>
+					<p>Zum Einbinden des <strong>Spielplans</strong>, bitte folgenden Code verwenden.</p>
+					<div class="panel panel-default">
+						<div id="scheduleSnippet" class="panel-body"></div>
+					</div>
+					<p>Beim Integrieren von Tabelle <strong>und</strong> Spielplan, <i>vly.min.js</i> nur <strong>einmal</strong> auf der Seite einbinden!</p>
+					<p>Wenn ihr Hilfe bei der Integration/Anpassung an euer Design braucht kontaktiert mich bitte via <a href="mailto:feedback@waverider.de">Email</a>.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div class="modal fade" id="legalModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Impressum</h4>
+                </div>
+                <div class="modal-body">
+                    <h1>Impressum</h1>
+                    <h2>Angaben gemäß § 5 TMG:</h2>
+                    <p>Stefan Kolb<br />
+                        Mußstr. 16<br />
+                        96047 Bamberg
+                    </p>
+                    <h2>Kontakt:</h2>
+                    <table>
+                        <tr><td>E-Mail: </td>
+                            <td>feedback@waverider.de</td>
+                        </tr></table>
+                    <p></p>
+                    <h1>Haftungsausschluss (Disclaimer)</h1>
+                    <p><strong>Haftung für Inhalte</strong></p> <p>Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p> <p><strong>Haftung für Links</strong></p> <p>Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p> <p><strong>Urheberrecht</strong></p> <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
+                    <h1>Datenschutzerklärung:</h1>
+					<p><strong>Aufgezeichnete Daten</strong></p><p>Die Webseite nutzt Google Analytics. Es wird ihre anonymisierte IP gespeichert. Die Nutzung des Pushbenachrichtigungsdienstes speichert eine Telegram Nutzer ID, um die abonnierten Ligen einem Nutzer zuzuordnen. Falls von den Nutzern angegeben speichert das Facebook Widget die Email Adresse des Nutzers. Löschanfragen sind an die obenstehende Email zu richten.</p>
+                    <p><strong>Datenschutzerklärung für die Nutzung von Google Analytics</strong></p> <p>Diese Website nutzt Funktionen des  Webanalysedienstes Google Analytics. Anbieter ist die Google Inc. 1600 Amphitheatre Parkway Mountain View, CA 94043, USA. Google Analytics verwendet sog. "Cookies". Das sind Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglichen. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieser Website werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert.</p> <p>Im Falle der Aktivierung der IP-Anonymisierung auf dieser Webseite wird Ihre IP-Adresse von Google jedoch innerhalb von Mitgliedstaaten der Europäischen Union oder in anderen Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum zuvor gekürzt. Nur in Ausnahmefällen wird die volle IP-Adresse an einen Server von Google in den USA übertragen und dort gekürzt. Im Auftrag des Betreibers dieser Website wird Google diese Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um Reports über die Websiteaktivitäten zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen gegenüber dem Websitebetreiber zu erbringen. Die im Rahmen von Google Analytics von Ihrem Browser übermittelte IP-Adresse wird nicht mit anderen Daten von Google zusammengeführt.</p> <p>Sie können die Speicherung der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich werden nutzen können. Sie können darüber hinaus die Erfassung der durch das Cookie erzeugten und auf Ihre Nutzung der Website bezogenen Daten (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten durch Google verhindern, indem sie das unter dem folgenden Link verfügbare Browser-Plugin herunterladen und installieren: <a href="http://tools.google.com/dlpage/gaoptout?hl=de" >http://tools.google.com/dlpage/gaoptout?hl=de</a></p><p> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<div id="fh5co-offcanvass">
+		<ul>
+			<li class="active"><a href="#" data-nav-section="home">Home</a></li>
+			<li><a href="#fh5co-features" data-nav-section="features">Features</a></li>
+			<li><a href="#fh5co-features-2" data-nav-section="facebook">Facebook Integration</a></li>
+			<li><a href="#fh5co-features-3" data-nav-section="web">Web Integration</a></li>
+			<li><a href="#calendar" data-nav-section="calendar">Dynamische Kalender</a></li>
+			<li><a href="#fh5co-features-4" data-nav-section="notifications">Push Benachrichtigungen</a></li>
+			<li><a href="#app" data-nav-section="app">App</a></li>
+			<li><a href="#fh5co-cta" data-nav-section="finance">Finanzierung</a></li>
+			<li><a href="#fh5co-pricing" data-nav-section="pricing">Preise</a></li>
+			<li><a href="#fh5co-footer" data-nav-section="contact">Kontakt</a></li>
+		</ul>
+	</div>
+	
+	<div id="fh5co-menu" class="navbar">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#fh5co-navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+					<a href="index.html" class="navbar-brand"><span>Volleyball Ergebnisdienst</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-page">
+		<div id="top"></div>
+		<div id="fh5co-wrap">
+			<header id="fh5co-hero" data-section="home" role="banner" style="background: url(images/bg_2.jpg) top left; background-size: cover;" >
+				<div class="fh5co-overlay"></div>
+				<div class="fh5co-intro" style="padding-top: 10px; padding-bottom: 10px;">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6 fh5co-text">
+								<p>&nbsp;</p>
+								<h2>Alle Verbände.<br>Alle Ligen.<br><span class="fh5co-colored">Ein Service.</span></h2>
+								<p>&nbsp;</p>
+							</div>
+						</div>
+					</div>						
+				</div>
+			</header>
+			
+			<div id="fh5co-main">
+				<div id="fh5co-features" data-section="features">
+
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 fh5co-section-heading text-center">
+								<h2 class="fh5co-lead">Alle Ergebnisse auf einen Blick.</h2>
+								<p class="fh5co-sub"><i>Warum braucht man für jeden Landesverband einen anderen Ergebnisdienst, eine andere App? Schluss damit!</i></p>
+								<p class="fh5co-sub"><strong><span class="fh5co-colored">Eine Schnittstelle. Alle Ligen. Integration für alle wichtigen Kommunikationskanäle.</span></strong></p>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+								<a href="#fh5co-features-2" class="fh5co-feature">
+									<span class="fh5co-feature-icon"><i class="icon-social-facebook"></i></span>
+									<h3 class="fh5co-feature-lead">Facebook Integration</h3>
+									<p class="fh5co-feature-text">Einbindung als Reiter direkt auf eurer Facebook Fanpage.</p>
+								</a>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+								<a href="#fh5co-features-3" class="fh5co-feature">
+									<span class="fh5co-feature-icon"><i class="icon-screen-desktop"></i></span>
+									<h3 class="fh5co-feature-lead">Web Integration</h3>
+									<p class="fh5co-feature-text">Einfache Integration der Tabellen in euren Webauftritt.</p>
+								</a>
+							</div>
+							<div class="clearfix visible-sm-block"></div>
+							<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+								<a href="#calendar" class="fh5co-feature">
+									<span class="fh5co-feature-icon"><i class="icon-calendar"></i></span>
+									<h3 class="fh5co-feature-lead">Dynamische Kalender</h3>
+									<p class="fh5co-feature-text">Alle Spieltage deiner (Lieblings-) Mannschaft in deinem Kalender.</p>
+								</a>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+								<a href="#fh5co-features-4" class="fh5co-feature">
+									<span class="fh5co-feature-icon"><i class="icon-screen-smartphone"></i></span>
+									<h3 class="fh5co-feature-lead">Push Benachrichtigungen</h3>
+									<p class="fh5co-feature-text">Alle neuen Ergebnisse sofort als Nachricht auf deinem Handy!</p>
+								</a>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+								<a href="#app" class="fh5co-feature">
+									<span class="fh5co-feature-icon"><i class="icon-screen-smartphone"></i></span>
+									<h3 class="fh5co-feature-lead">Mobile App</h3>
+									<p class="fh5co-feature-text">Die Volleyball App für dein Handy!</p>
+								</a>
+							</div>
+			        	</div>
+			       </div>
+
+			    </div>
+
+				<div id="fh5co-clients">
+					<div class="container">
+						<div class="row text-center">
+							<div class="col-md-3 col-sm-6 col-xs-6">
+								<figure class="fh5co-client"><img src="images/client_1.png" alt=""></figure>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			    <div id="fh5co-features-2" data-section="facebook">
+					<div class="fh5co-features-2-content">
+					    <div class="container">
+					    	<div class="row">
+					    		<div class="col-md-8 col-md-offset-2 fh5co-section-heading text-center">
+									<h2 class="fh5co-lead">Facebook Integration</h2>
+									<p class="fh5co-sub">
+										Zeigt eure Tabellen als Reiter auf eurer Facebook Fanpage an. Keine Umwege für eure Fans, um die aktuelle Tabellensituation des Teams zu erfahren.
+									</p>
+								</div>
+					    		<div class="col-md-8 col-md-offset-2 fh5co-image">
+					    			<p class="text-center">
+					    			<img src="images/facebook.png" class="" alt="Volleyball Ergebnisdienst Facebook Page Tab">
+					    			</p>
+					    		</div>
+
+								<div class="clearfix visible-sm-block"></div>
+
+								<div class="fh5co-spacer fh5co-spacer-sm"></div>
+
+								<div class="col-md-8 col-md-offset-2 fh5co-sub text-center">
+									<h4><strong>Aktuell aufgrund einer <a href="https://developers.facebook.com/docs/pages/tabs" target="_blank" rel="noopener">Einschränkung von Facebook</a> nur für Seiten ab 2000 Likes verfügbar!</strong></h4>
+								</div>
+
+								<div class="col-md-4 col-md-offset-4 text-center">
+									<a href="https://facebook.com/volleyball.ergebnisdienst" class="btn btn-primary">Jetzt nutzen</a>
+								</div>
+
+					    	</div>
+					    </div>
+					</div>
+
+			    </div>
+
+				<div id="fh5co-facts">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 fh5co-text">
+								<h3>17 Verbände. 1100 Ligen. <span style="color:black">Ein Service.</span></h3>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="fh5co-features-3" data-section="web">
+					<div class="fh5co-features-3-content">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-8 col-md-offset-2 fh5co-section-heading text-center">
+									<h2 class="fh5co-lead">Web Integration</h2>
+									<p class="fh5co-sub">Zeigt eure Tabellen und Spielpläne direkt in eurer Homepage an. Einfache Integration für jedes Content-Management-System, das HTML und Javascript Code erlaubt, wie <i>Joomla</i>, <i>Wordpress</i>, <i>Typo3</i>, u.v.m.</p>
+								</div>
+								<div class="col-md-8 col-sm-12">
+									<div class="panel panel-default">
+                                        <small>
+											<style>
+												.vly table { width: 100%; }
+												.vly table tr td, th { padding: 0 5px; }
+												.vly h1 { margin-top: 0px; }
+											</style>
+										<div class="panel-heading"><i class="fh5co-colored">Vorschau</i></div>
+										<div class="widgetPreview panel-body">
+											<div class="vly" data-league-id="dvv_m_0_1"></div>
+										</div>
+                                        </small>
+									</div>
+								</div>
+								<div class="col-md-4 fh5co-text-wrap">
+									<div class="form-group">
+										<label for="selGender">Geschlecht:</label>
+										<select class="form-control selGender">
+											<option value="M">Herren</option>
+											<option value="F">Damen</option>
+											<option value="Y">Jugend</option>
+											<option value="X">BFS/Mixed</option>
+										</select>
+
+										<label for="selAssociation">Verband:</label>
+										<select class="form-control selAssociation">
+										</select>
+
+										<label for="selLeague">Liga:</label>
+										<select class="form-control selLeague">
+										</select>
+									</div>
+									<div class="form-group">
+										<i>Optionen:</i>
+										<div class="checkbox">
+											<label><input type="checkbox" id="code-header" value="header" checked> Kopfzeile</label>
+											<label><input type="checkbox" id="code-games" value="games"> Letzte Spiele</label>
+											<label><input type="checkbox" id="code-special" value="special"> Erweiterte Tabelle</label>
+											<label>Teammauswahl <input type="text" id="code-team" value=""></label>
+										</div>
+									</div>
+
+									<div class="col-md-8 col-md-offset-2 text-center">
+										<a href="" id="btnCode" class="btn btn-primary" data-toggle="modal" data-target="#codeModal">Code generieren</a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div id="calendar" data-section="calendar">
+					<div class="fh5co-features-3-content">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-8 col-md-offset-2 fh5co-section-heading text-center">
+									<h2 class="fh5co-lead">Dynamische Kalender</h2>
+									<p class="fh5co-sub">Importiert die Spieltage eurer (Lieblings-) Mannschaft direkt in euren persönlichen Kalender. Nie wieder händisch alle Termine in den Kalender eintragen. Dabei werden die Daten immer mit dem aktuellen Spielplan synchronisiert, falls sich einmal etwas ändert!</p>
+								</div>
+
+								<div class="col-md-6 col-sm-12 fh5co-image">
+									<img src="images/calendar.png" class="" alt="Volleyball Ergebnisdienst Spieltag Kalender">
+								</div>
+
+								<div class="clearfix visible-sm-block"></div>
+								<div class="fh5co-spacer-sm"></div>
+
+								<div class="col-md-6 fh5co-text-wrap">
+									<div class="form-group">
+										<label for="selGender">Geschlecht:</label>
+										<select class="form-control selGender">
+											<option value="M">Herren</option>
+											<option value="F">Damen</option>
+											<option value="Y">Jugend</option>
+											<option value="X">BFS/Mixed</option>
+										</select>
+
+										<label for="selAssociation">Verband:</label>
+										<select class="form-control selAssociation">
+										</select>
+
+										<label for="selLeague">Liga:</label>
+										<select class="form-control selLeague">
+										</select>
+
+										<label for="selTeam">Team:</label>
+										<select class="form-control selTeam">
+										</select>
+									</div>
+
+									<div class="col-md-8 col-md-offset-2 text-center">
+										<a href="" id="btnCalendar" class="btn btn-primary" data-toggle="modal" data-target="#calendarModal">Kalender abonnieren</a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<!--
+			    <div id="fh5co-testimony" data-section="testimonies">
+				    <div class="container">
+				    	<div class="row">
+
+							<div class="owl-carousel">
+
+								<div class="item">
+									<div class="col-md-3 col-sm-3 col-xs-4 col-xxs-12">
+						    			<figure class="fh5co-vcard"><img src="images/user.jpg" alt="Free HTML5 Template by FREEHTML5.co" class="img-responsive"></figure>
+						    		</div>
+						    		<div class="col-md-9 col-sm-9 col-xs-8 col-xxs-12">
+						    			<blockquote>
+						    				<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+						    			</blockquote>
+						    			<p class="fh5co-author fh5co-uppercase-sm"><span>Gustav Barrow</span>, XYZ Inc.</p>
+						    		</div>
+						    	</div>
+
+						    	<div class="item">
+									<div class="col-md-3 col-sm-3 col-xs-4 col-xxs-12">
+						    			<figure class="fh5co-vcard"><img src="images/user_2.jpg" alt="Free HTML5 Template by FREEHTML5.co" class="img-responsive"></figure>
+						    		</div>
+						    		<div class="col-md-9 col-sm-9 col-xs-8 col-xxs-12">
+						    			<blockquote>
+						    				<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+						    			</blockquote>
+						    			<p class="fh5co-author fh5co-uppercase-sm"><span>Gustav Barrow</span>, XYZ Inc.</p>
+						    		</div>
+						    	</div>
+
+						    	<div class="item">
+									<div class="col-md-3 col-sm-3 col-xs-4 col-xxs-12">
+						    			<figure class="fh5co-vcard"><img src="images/user_3.jpg" alt="Free HTML5 Template by FREEHTML5.co" class="img-responsive"></figure>
+						    		</div>
+						    		<div class="col-md-9 col-sm-9 col-xs-8 col-xxs-12">
+						    			<blockquote>
+						    				<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+						    			</blockquote>
+						    			<p class="fh5co-author fh5co-uppercase-sm"><span>Gustav Barrow</span>, XYZ Inc.</p>
+						    		</div>
+						    	</div>
+
+
+						    </div>
+
+				    	</div>
+				    </div>
+			    </div>
+				-->
+
+				<div id="fh5co-features-4" data-section="notifications">
+					<div class="fh5co-features-4-content">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-8 col-md-offset-2 fh5co-section-heading text-center">
+									<h2 class="fh5co-lead">Push Notifications</h2>
+									<p class="fh5co-sub">
+										Alle neuen Ergebnisse und Tabellen sofort als Nachricht auf deinem Handy!<br>
+										Wir senden dir aktuelle Spielergebnisse und Tabellenupdates als private Nachricht oder direkt in deinen Gruppenchat im Telegram Messenger.<br>
+										Hol dir <a href="https://telegram.org/" target="_blank" rel="noopener">Telegram</a>!
+									</p>
+									<h4><strong>Nur mit dem Messenger <a href="https://telegram.org/" target="_blank" rel="noopener">Telegram</a> möglich.</strong></h4>
+								</div>
+
+								<div class="col-md-4 fh5co-text-wrap">
+									<div class="row text-center">
+										<div class="col-md-12 col-sm-6 col-xs-6 col-xxs-12 fh5co-text">
+											<span class="fh5co-icon"><i class="icon-bubbles"></i></span>
+											<h4 class="fh5co-uppercase-sm">1. Registrieren</h4>
+											<p>Um Push Notifications zu erhalten, schreibe einfach eine Nachricht an <a href="https://telegram.me/vllybllbot">@VllybllBot</a> oder füge den Bot deinem gewünschten Gruppenchat hinzu.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-md-push-4 fh5co-text-wrap">
+									<div class="row text-center">
+										<div class="col-md-12 col-sm-6 col-xs-6 col-xxs-12 fh5co-text">
+											<span class="fh5co-icon"><i class="icon-check"></i></span>
+											<h4 class="fh5co-uppercase-sm">2. Abonnieren</h4>
+											<p>Abonniere deine gewünsche Liga durch das Senden einer Nachricht mit dem Kommando <a><strong>/subscribe</strong></a>. Folge einfach den Menüs, um deine gewünschte Liga auszuwählen.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-md-pull-4 fh5co-image">
+									<p class="text-center">
+										<img src="images/iphone_blank_2.png" class="" alt="Volleyball Ergebnisdienst Telegram Push Notifications">
+									</p>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div id="app" data-section="app">
+					<div class="fh5co-features-4-content">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-8 col-md-offset-2 fh5co-section-heading text-center">
+									<h2 class="fh5co-lead">Mobile App</h2>
+									<p class="fh5co-sub">
+										Alle Ergebnisse, Tabellen, Teams und Livespiele jetzt auch direkt auf auf deinem Handy!<br>
+										Wenn du ein Android Handy besitzt kannst du bereits jetzt die App testen.<br>
+										Bei Interesse und Unterstützung ist in Zukunft auch eine iOS App möglich.
+									</p>
+									<h4><strong>Nutze die Android App jetzt als <a href="https://play.google.com/apps/testing/de.vly.vly" target="_blank" rel="noopener">Betatester</a>.</strong></h4>
+								</div>
+
+								<div class="col-md-4 col-md-push-4 fh5co-image">
+									<p class="text-center">
+										<img src="images/iphone_vly.png" class="" alt="Volleyball Ergebnisdienst App">
+									</p>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+
+				<div class="fh5co-bg-section cta" data-section="finance" id="fh5co-cta" style="background: url(images/hero_bg.jpg) fixed;">
+					<div class="fh5co-overlay"></div>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="fh5co-hero-wrap">
+									<div class="fh5co-hero-intro text-center">
+										<div class="row">
+											<div class="col-md-8 col-md-offset-2 fh5co-section-heading text-center">
+												<h2 class="fh5co-lead">Finanzierung</h2>
+												<p class="fh5co-sub">
+													Hinter dem Angebot steht keine Firma sondern eine Privatperson, die für den Volleyball lebt wie ihr auch.
+													Im Gegensatz zu großen Firmen verdiene ich kein Geld durch Werbung oder mit euren Daten.
+                                                    Mir entstehen jedoch Kosten für Domain, Hosting und Betreuung des Angebots.
+													Deshalb brauche ich eure Hilfe, um den Service weiter kostenlos anbieten zu können.
+                                                    Dafür muss niemand tief in die Tasche greifen, schon mit vielen kleinen Beträgen können wir es schaffen!
+												</p>
+												<p class="fh5co-sub">Lasst uns gemeinsam etwas für den Volleyball in Deutschland tun!</p>
+												<div><a href="#fh5co-pricing" class="btn btn-primary">Jetzt Spenden</a></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div id="fh5co-pricing" data-section="pricing">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 fh5co-section-heading text-center">
+								<h2 class="fh5co-lead">Spenden</h2>
+								<p class="fh5co-sub">
+									Spenden sind aktuell nur über PayPal möglich.
+									Wenn ihr keinen PayPal Account habt und per Überweisung spenden wollt, schreibt mir bitte eine <a href="&#109;&#x61;&#x69;&#x6c;&#116;&#111;&#x3a;&#x66;&#101;&#x65;&#100;&#x62;&#97;&#99;&#x6b;&#64;&#119;&#97;&#x76;&#101;&#114;&#105;&#100;&#101;&#x72;&#46;&#x64;&#101;">Email</a>.
+								</p>
+							</div>
+
+							<div class="col-md-3">
+								<a href="https://paypal.me/stfnklb" class="fh5co-figure active pricing-feature">
+									<span class="fh5co-price">€0<span>/Forever</span></span>
+									<h3 class="fh5co-figure-lead">Fan</h3>
+									<p class="fh5co-figure-text">Der Eintritt ist frei und jeder gibt was er kann.</p>
+								</a>
+							</div>
+							<div class="col-md-3">
+								<a href="https://paypal.me/stfnklb/5" class="fh5co-figure">
+									<span class="fh5co-price">€5<span>/Saison</span></span>
+									<h3 class="fh5co-figure-lead">Mannschaft</h3>
+									<p class="fh5co-figure-text">Auch Kleinvieh macht Mist!</p>
+								</a>
+							</div>
+							<div class="col-md-3">
+								<a href="https://paypal.me/stfnklb/20" class="fh5co-figure">
+									<span class="fh5co-price">€20<span>/Saison</span></span>
+									<h3 class="fh5co-figure-lead">Verein</h3>
+									<p class="fh5co-figure-text">Ein ganzer Verein kann von dem Service profitieren.</p>
+								</a>
+							</div>
+							<div class="col-md-3">
+								<a href="https://paypal.me/stfnklb" class="fh5co-figure">
+									<span class="fh5co-price">€?<span>/Saison</span></span>
+									<h3 class="fh5co-figure-lead">Sponsor</h3>
+									<p class="fh5co-figure-text">Als Gönner hält man den Laden am Laufen.</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<footer id="fh5co-footer" data-section="contact" style="">
+			<div class="fh5co-overlay"></div>
+			<div class="fh5co-footer-content">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-md-offset-6 col-sm-12 col-md-push-3">
+							<h3 class="fh5co-lead">Über uns</h3>
+							<ul>
+								<li><a href="" data-toggle="modal" data-target="#legalModal">Impressum</a></li>
+								<li><a href="&#109;&#x61;&#x69;&#x6c;&#116;&#111;&#x3a;&#x66;&#101;&#x65;&#100;&#x62;&#97;&#99;&#x6b;&#64;&#119;&#97;&#x76;&#101;&#114;&#105;&#100;&#101;&#x72;&#46;&#x64;&#101;">Kontakt</a></li>
+							</ul>
+						</div>
+
+						<div class="col-md-3 col-sm-12 col-md-pull-9">
+							<div class="fh5co-footer-logo"><a href="index.html">Volleyball Ergebnisdienst</a></div>
+							<p class="fh5co-copyright"><small>&copy; 2021<br>Template von <a href="http://freehtml5.co/" target="_blank" rel="noopener">FREEHTML5.co</a></small></p>
+							<p class="fh5co-social-icons">
+								<a href="https://twitter.com/stfnklb"><i class="icon-twitter"></i></a>
+								<a href="https://facebook.com/volleyball.ergebnisdienst"><i class="icon-facebook"></i></a>
+								<a href="https://instagram.com/vly.app"><i class="icon-instagram"></i></a>
+							</p>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<!-- Owl Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- toCount -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- Main JS -->
+	<script src="js/main.js"></script>
+	<!-- Social Share Kit CSS -->
+	<link rel="stylesheet" href="css/social-share-kit.css" type="text/css">
+	<script type="text/javascript" src="js/social-share-kit.min.js"></script>
+	<script type="text/javascript">
+		SocialShareKit.init();
+	</script>
+
+	<script>
+        function loadLeagues() {
+            $.ajax({url: "/api/standings?association=" + $(".selAssociation").val() + '&gender=' + $(".selGender").val(), success: function(result){
+                $(".selLeague").empty();
+                $.each(result, function( index, value ) {
+					if (value.state) {
+						$(".selLeague").append('<option value=\"' + value.id + '\"><a href="#">' + value.name + ' (' + value.state + ')</option>');
+					} else {
+						$(".selLeague").append('<option value=\"' + value.id + '\"><a href="#">' + value.name + '</option>');
+					}
+                });
+
+                if (result.length == 0) {
+                    $(".selLeague").prop("disabled", true);
+                    $("#btnCode").addClass("disabled");
+                } else {
+                    $(".selLeague").prop("disabled", false);
+                    $("#btnCode").removeClass("disabled");
+                    // update widget
+                    $.getJSON("/api/standings/" + $(".selLeague").val(), function(data){
+                        updateWidget();
+                    });
+                }
+                loadTeams();
+            }});
+        }
+
+		function loadTeams() {
+			$.ajax({
+				url: "/api/standings/" + $(".selLeague").val() + "/teams",
+				success: function(result){
+					$(".selTeam").empty();
+					$(".selTeam").append('<option value=\"_all"><a href="#">Ligakalender (alle Teams)</option>');
+
+					$.each(result, function( index, value ) {
+						$(".selTeam").append('<option value=\"' + value + '\"><a href="#">' + value + '</option>');
+					});
+
+					$(".selTeam").prop("disabled", false);
+					$.ajax({
+						url: "/api/schedules/" + $(".selLeague").val() + "/calendar.ics",
+						statusCode: {
+							404: function () {
+								$("#btnCalendar").addClass("disabled");
+								$("#btnCalendar").text("Kein Kalender verfügbar");
+							},
+							200: function() {
+								$("#btnCalendar").removeClass("disabled");
+								$("#btnCalendar").text("Kalender abonnieren");
+							}
+						}
+					});
+				},
+				error: function() {
+					$(".selTeam").prop("disabled", true);
+					$("#btnCalendar").addClass("disabled");
+					$("#btnCalendar").text("Kein Kalender verfügbar");
+				}
+			});
+		}
+
+        function widgetCode(leagueID, options) {
+			var div = "<div class=\"vly\" data-league-id=\"" + leagueID + "\"";
+			if (options) {
+			    if (options.schedule) {
+                    div += " data-games";
+
+                    if (options.team) {
+                        div += " data-team='" + options.team + "'";
+                    }
+				} else {
+                    if (!options.header) {
+                        div += " data-no-header";
+                    }
+                    if (!options.games) {
+                        div += " data-no-games";
+                    }
+                    if (options.special) {
+                        div += " data-special";
+                    }
+                    if (options.team) {
+                        div += " data-team='" + options.team + "'";
+                    }
+                }
+			}
+			div += "></div>" + "<script src=\"\/\/volleyball-ergebnisdienst.de/widget/vly.min.js\"><\/script>";
+            return div;
+        }
+
+		function calendarURL(leagueID, team) {
+			if (team === '_all') {
+				return "https://volleyball-ergebnisdienst.de/api/schedules/" + leagueID + "/calendar.ics";
+			}
+			return "https://volleyball-ergebnisdienst.de/api/schedules/" + leagueID + "/" + team.replace(/[^a-z0-9]/gi, '_').toLowerCase() + "/calendar.ics";
+		}
+
+        function updateWidget() {
+            $('.widgetPreview').html();
+            $('.widgetPreview').html(widgetCode($('.selLeague').val(), {header: $('#code-header').is(':checked'), games: $('#code-games').is(':checked'), special: $('#code-special').is(':checked'), team: $('#code-team').val()}));
+        }
+
+		$(document).ready(function() {
+			// initialize code generator dropdown
+			$.ajax({url: "/api/associations", success: function(result){
+				$.each(result, function( index, value ) {
+					$(".selAssociation").append('<option value=\"' + value.association_id + '\"><a href="#">' + value.name + '</option>');
+				});
+                loadLeagues();
+			}});
+
+			$('.selGender').on('change', function () {
+				$('.selGender').val($(this).val());
+				loadLeagues();
+			});
+
+			$('.selAssociation').on('change', function () {
+				$('.selAssociation').val($(this).val());
+				loadLeagues();
+			});
+
+            $('.selLeague').on('change', function () {
+				$('.selLeague').val($(this).val());
+                $.getJSON("/api/standings/" + $(this).val(), function(data){
+                    updateWidget();
+					loadTeams();
+                });
+            });
+
+            $('#code-team').tooltip({'trigger':'focus', 'title': 'Namensauschnitt oder RegEx möglich!'});
+
+			// Widget options
+			$('#code-header, #code-games, #code-schedule, #code-special, #code-team').on('change', function () {
+				updateWidget();
+			});
+
+			// Modals
+			$('#codeModal').on('show.bs.modal', function () {
+				$('#codeSnippet').text(widgetCode($(".selLeague").val(), {header: $('#code-header').is(':checked'), games: $('#code-games').is(':checked'), special: $('#code-special').is(':checked'), team: $('#code-team').val()}));
+                $('#scheduleSnippet').text(widgetCode($(".selLeague").val(), {schedule: true, team: $('#code-team').val()}));
+			});
+
+			$('#calendarModal').on('show.bs.modal', function () {
+				var url = calendarURL($(".selLeague").val(), $(".selTeam").val());
+
+				$('#cal-google-href').attr("href", "https://www.google.com/calendar/render?cid=" + url);
+				$('#cal-download-href').attr("href", url);
+				$('#cal-url-href').text(url);
+			});
+
+			$('.calendar-icon').on('click', function () {
+				var div = '#' + $(this).data("descId");
+				$('.cal-desc').hide();
+				$(div).show();
+			});
+		});
+	</script>
+	</body>
+</html>
